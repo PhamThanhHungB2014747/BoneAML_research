@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV and Select Model</title>
+</head>
+<body>
+    <h1 class="text-center">Upload CSV and Select Model</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data" class="text-center">
+        <label for="file">Choose CSV file:</label>
+        <input type="file" name="file" id="file" accept=".csv">
+        <br><br>
+        <label for="model">Choose a model:</label>
+        <select name="model" id="model">
+            <option value="../models/svm_model.pkl">SVM</option>
+            <option value="../models/knn_model.pkl">KNN</option>
+            <option value="../models/nb_model.pkl">Native Bayes</option>
+            <option value="../models/decision_tree_model.pkl">Decision Tree</option>
+            <option value="../models/random_forest_model.pkl">Random Forest</option>
+            <option value="../models/xgboost_model.pkl">XGBoost</option>
+            <option value="../models/gradient_boosting_model.pkl">Gradient Boosting</option>
+            <option value="../models/logistic_regression_model.pkl">Logistic Regression</option>
+            <option value="../models/adaboost_model.pkl">AdaBoost</option>
+            <option value="../models/multinomial_logistic_regression_model.pkl">Multinomial Logistic Regression</option>
+            <!-- Add more models here -->
+        </select>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
