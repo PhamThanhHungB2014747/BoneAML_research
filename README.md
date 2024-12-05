@@ -1,0 +1,3 @@
+Research on machine learning models in single cell sequencing data analysis is conducted based on comparing the performance of machine learning models including: AdaBoost, Decision Tree, Voting Classifier, XGBoost, kNN, Logistic Regression, Multinomial Logistic Regression, Gaussian Naive Bayes, Random Forest, Support Vector Machine to analyze single cell sequencing data.
+The process goes through the stages of collecting, filtering necessary data and standardizing training data to serve the training and comparing the accuracy between models.
+In which, the XGBoost model has the best accuracy in classifying genetic expressions of cells. The results show the potential of machine learning models in medical data analysis applications.
